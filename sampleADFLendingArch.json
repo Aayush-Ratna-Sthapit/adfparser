@@ -1,0 +1,80 @@
+{
+    "adf": {
+        "prospect": {
+            "@status": "new",
+            "id": {
+                "@sequence": "1",
+                "@source": "LendingArch",
+                "#text": "{Lead_ID}"
+            },
+            "requestdate": "{Lead_Created_Date_Time}",
+            "vehicle": {
+                "@interest": "buy",
+                "@status": "used",
+                "year": null,
+                "make": null,
+                "model": null,
+                "bodystyle": "{desired_vehicle}"
+            },
+            "customer": {
+                "contact": {
+                    "@primarycontact": "1",
+                    "name": [
+                        {
+                            "@part": "first",
+                            "@type": "individual",
+                            "#text": "{first_name}"
+                        },
+                        {
+                            "@part": "last",
+                            "@type": "individual",
+                            "#text": "{last_name}"
+                        }
+                    ],
+                    "email": {
+                        "@preferredcontact": "1",
+                        "#text": "{email_address}"
+                    },
+                    "phone": {
+                        "@type": "phone",
+                        "@time": "nopreference",
+                        "@preferredcontact": "1",
+                        "#text": "{phone_home}"
+                    },
+                    "address": {
+                        "@type": "home",
+                        "street": {
+                            "@line": "1",
+                            "#text": "{address}"
+                        },
+                        "apartment": "{address2}",
+                        "city": "{city}",
+                        "regioncode": "{state}",
+                        "postalcode": "{zip_code}",
+                        "country": "Canada"
+                    }
+                },
+                "comments": "Date of Birth: {dob}\n                Monthly Payment: {monthly_residence_cost}\n                Rent_or_own: {residence_type}\n                Time at address: {residence_duration}\n                Employment Status: {employment_status}\n                Occupation: {job_title}\n                Employer: {company_name}\n                Time with Employer: {employment_duration}\n                Monthly Income: {gross_monthly_income}\n                IP Address: {ip_address}\n                SSN: {ssn}\n                Notes: {notes}\n                French: {french}"
+            },
+            "vendor": {
+                "vendorname": "{vendor_name}",
+                "contact": {
+                    "name": "{contact_name}",
+                    "email": "{contact_email}"
+                }
+            },
+            "provider": {
+                "name": {
+                    "@part": "full",
+                    "@type": "business",
+                    "#text": "LendingArch"
+                },
+                "email": {
+                    "@preferredcontact": "1",
+                    "#text": "leads@lendingarch.com"
+                },
+                "url": "lendingarch.com"
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<?adf version="1.0"?>
+<adf>
+    <prospect status="new">
+        <id sequence="1" source="ABC"></id>
+        <requestdate>2019-01-15T18:46:36-06:00</requestdate>
+        <vehicle interest="buy" status="used"> 
+            <year>2023</year>
+            <make>Hyundai</make>
+            <model>i30</model>
+        </vehicle>
+        <customer>
+            <contact primarycontact="1">
+                <name part="first" type="individual">John</name>
+                <name part="middle" type="individual"></name> 
+                <name part="last" type="individual">Test01292019</name>
+                <email preferredcontact="1">testemail@domain.com</email>
+                <phone type="phone" time="morning" preferredcontact="1">1234567890</phone>
+                <phone type="cellphone" time="afternoon" preferredcontact="0">9999999999</phone>
+                <phone type="pager" time="evening" preferredcontact="0">9999999999</phone>
+                <phone type="fax" time="day" preferredcontact="0">9999999999</phone>
+                <address type="home">
+                    <street line="1">6299 Airport Road</street>
+                    <apartment></apartment>
+                    <city>Mississauga</city>
+                    <regioncode>ON</regioncode>
+                    <postalcode>L4V1N3</postalcode>
+                    <country>Canada</country>
+                </address>
+                </contact>
+            <comments>
+            Date of Birth: 1980-11-17
+            Monthly Payment: 1450
+            Rent_or_own: Rent
+            Time at address: 11 years 2 months
+            Occupation: Occupation1
+            Employer: EmployerName
+            Time with Employer: 2 years 2
+            Monthly Income: 5500
+            Lead Timestamp: 08/31/2019 04:30pm
+            IP Address: 70.25.4.55
+            Comments: looking for SUV, new to the country...
+            </comments>
+        </customer>
+        <vendor>
+            <vendorname>Approval Genie</vendorname>
+            <contact>
+                <name>John B</name>
+                <email>john@approvalgenie.ca</email>
+            </contact>
+        </vendor>
+        <provider>
+            <name part="full" type="business">PROSPECT</name>
+            <email preferredcontact="1">leadprovideremail@domain.com</email>
+            <url>leadprovider.domain.com</url>
+        </provider>
+    </prospect>
+</adf>

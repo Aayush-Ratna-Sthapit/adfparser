@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?adf version="1.0"?>
+<adf>
+    <prospect status="new">
+        <id sequence="1" source="LendingArch">{Lead_ID}</id>
+        <requestdate>{Lead_Created_Date_Time}</requestdate>
+        <vehicle interest="buy" status="used">
+            <year></year>
+            <make></make>
+            <model></model>
+            <bodystyle>{desired_vehicle}</bodystyle>
+        </vehicle>
+        <customer>
+            <contact primarycontact="1">
+                <name part="first" type="individual">{first_name}</name>
+                <name part="last" type="individual">{last_name}</name>
+                <email preferredcontact="1">{email_address}</email>
+                <phone type="phone" time="nopreference" preferredcontact="1">{phone_home}</phone>
+                <address type="home">
+                    <street line="1">{address}</street>
+                    <apartment>{address2}</apartment>
+                    <city>{city}</city>
+                    <regioncode>{state}</regioncode>
+                    <postalcode>{zip_code}</postalcode>
+                    <country>Canada</country>
+                </address>
+            </contact>
+            <comments>
+                Date of Birth: {dob}
+                Monthly Payment: {monthly_residence_cost}
+                Rent_or_own: {residence_type}
+                Time at address: {residence_duration}
+                Employment Status: {employment_status}
+                Occupation: {job_title}
+                Employer: {company_name}
+                Time with Employer: {employment_duration}
+                Monthly Income: {gross_monthly_income}
+                IP Address: {ip_address}
+                SSN: {ssn}
+                Notes: {notes}
+                French: {french}
+            </comments>
+        </customer>
+        <vendor>
+            <vendorname>{vendor_name}</vendorname>
+            <contact>
+                <name>{contact_name}</name>
+                <email>{contact_email}</email>
+            </contact>
+        </vendor>
+        <provider>
+            <name part="full" type="business">LendingArch</name>
+            <email preferredcontact="1">leads@lendingarch.com</email>
+            <url>lendingarch.com</url>
+        </provider>
+    </prospect>
+</adf>

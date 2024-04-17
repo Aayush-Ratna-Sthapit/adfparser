@@ -1,0 +1,102 @@
+{
+    "adf": {
+        "prospect": {
+            "@status": "new",
+            "id": {
+                "@sequence": "1",
+                "@source": "ABC"
+            },
+            "requestdate": "2019-01-15T18:46:36-06:00",
+            "vehicle": {
+                "@interest": "buy",
+                "@status": "used",
+                "year": "2023",
+                "make": "Hyundai",
+                "model": "i30"
+            },
+            "customer": {
+                "contact": {
+                    "@primarycontact": "1",
+                    "name": [
+                        {
+                            "@part": "first",
+                            "@type": "individual",
+                            "#text": "John"
+                        },
+                        {
+                            "@part": "middle",
+                            "@type": "individual"
+                        },
+                        {
+                            "@part": "last",
+                            "@type": "individual",
+                            "#text": "Test01292019"
+                        }
+                    ],
+                    "email": {
+                        "@preferredcontact": "1",
+                        "#text": "testemail@domain.com"
+                    },
+                    "phone": [
+                        {
+                            "@type": "phone",
+                            "@time": "morning",
+                            "@preferredcontact": "1",
+                            "#text": "1234567890"
+                        },
+                        {
+                            "@type": "cellphone",
+                            "@time": "afternoon",
+                            "@preferredcontact": "0",
+                            "#text": "9999999999"
+                        },
+                        {
+                            "@type": "pager",
+                            "@time": "evening",
+                            "@preferredcontact": "0",
+                            "#text": "9999999999"
+                        },
+                        {
+                            "@type": "fax",
+                            "@time": "day",
+                            "@preferredcontact": "0",
+                            "#text": "9999999999"
+                        }
+                    ],
+                    "address": {
+                        "@type": "home",
+                        "street": {
+                            "@line": "1",
+                            "#text": "6299 Airport Road"
+                        },
+                        "apartment": null,
+                        "city": "Mississauga",
+                        "regioncode": "ON",
+                        "postalcode": "L4V1N3",
+                        "country": "Canada"
+                    }
+                },
+                "comments": "Date of Birth: 1980-11-17\n            Monthly Payment: 1450\n            Rent_or_own: Rent\n            Time at address: 11 years 2 months\n            Occupation: Occupation1\n            Employer: EmployerName\n            Time with Employer: 2 years 2\n            Monthly Income: 5500\n            Lead Timestamp: 08/31/2019 04:30pm\n            IP Address: 70.25.4.55\n            Comments: looking for SUV, new to the country..."
+            },
+            "vendor": {
+                "vendorname": "Approval Genie",
+                "contact": {
+                    "name": "John B",
+                    "email": "john@approvalgenie.ca"
+                }
+            },
+            "provider": {
+                "name": {
+                    "@part": "full",
+                    "@type": "business",
+                    "#text": "PROSPECT"
+                },
+                "email": {
+                    "@preferredcontact": "1",
+                    "#text": "leadprovideremail@domain.com"
+                },
+                "url": "leadprovider.domain.com"
+            }
+        }
+    }
+}
